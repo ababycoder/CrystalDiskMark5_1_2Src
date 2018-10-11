@@ -123,6 +123,7 @@ UINT ExecDiskBenchAll(LPVOID dlg)
 {
 	if(Init(dlg))
 	{
+		Interval(dlg); //BBJJ
 		DiskSpd(dlg, TEST_SEQUENTIAL_READ_MULTI_QT);
 		Interval(dlg);
 		DiskSpd(dlg, TEST_RANDOM_READ_4K_MULTI_QT);
